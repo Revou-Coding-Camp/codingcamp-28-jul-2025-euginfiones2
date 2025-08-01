@@ -3,9 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Website</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css\styles.css">
 </head>
 <body>
+    <!-- Header & Navigation -->
+    <header class="main-header">
+        <!-- Logo Icon -->
+        <div class="logo">
+            <img src="assets\image.png" alt="Logo"></div>
+        <!-- Navigation Menu -->
+        <nav>
+                <a class= "nav1" href="#home">Home</a>
+                <a class= "nav1" href="#our-profile">Our Profile</a>
+                <a class= "nav1" href="#portofolio">Portofolio</a>
+                <a class= "nav1" href="#message">Message</a>
+        </nav>
+    </header>
+    <hr>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Section -->
+        <section id="home">
+            <h1>Welcome <span id="welcome-speech"></span> to Our Website</h1>
+            <p>Ini adalah latihan pertama</p>
+            <div class="foto"><img src="https://lipsum.app/random/1600x900" alt="Halaman"></div>
+        </section>
+        <hr>
+        
+        <!-- Our Profile Section -->
+        <section id="our-profile">
+            <h2>Our Profile</h2>
+            <div class="kumpulan-item">
+                <div class="item">
+                    <img src="https://cdn.pixabay.com/photo/2013/07/13/09/41/flag-155928_960_720.png" alt="Indonesia">
+                    <p>Indonesia</p>
+                </div>
+                <div class="item">   
+                    <img src="https://superawesomevectors.com/wp-content/uploads/2014/03/free-vector-flag-of-malaysia.jpg">
+                    <p>Malaysia</p>
+                </div>
+                <div class="item">  
+                    <img src="https://1.bp.blogspot.com/-sfeiDMb0YGA/Wrz-Z2H9izI/AAAAAAAAC5Y/c9xAP7Tr-hME2zSTHITgouDMQxV6Kof0wCLcBGAs/s1600/la-bandera-de-filipinas.png">
+                    <p>Filipina</p>
+                </div>
+            </div>
+        </section>
+        <hr>
+
+        <!-- Portofolio Section -->
+        <section id="portofolio">
+            <h2>Portofolio</h2>
+            <p>Check out our work and projects.</p>
+        </section>
+        <hr>
+
+        <!-- Message Section -->
+        <section id="message">
+            <h2>Message</h2>
+            <form class="isi-form">
+                <div class="form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="nama" placeholder="Nama.." required>
+                </div>
+                
+                <br>
+                <div class="form">
+                    <label for="tanggal-lahir">Tanggal Lahir:</label>
+                    <input type="date" id="tanggal-lahir" required>
+                </div>
+                <br>
+                
+                <div class="form">
+                    <label>Jenis Kelamin:</label>
+                    <input type="radio" id="laki" name="jenis_kelamin" value="laki-laki" checked>
+                    <label for="laki">Laki-Laki</label>
+                    <input type="radio" id="perempuan" name="jenis_kelamin" value="perempuan">
+                    <label for="perempuan">Perempuan</label>
+                </div>
+                <br>
+                
+                <div class="form">
+                    <label for="message">Pesan:</label>
+                    <textarea id="message" name="message" rows="6" placeholder="...."></textarea>
+                </div>
+                    <br>
+
+                <div class="form">
+                    <button onclick="validateForm(event)">Kirim</button>
+                    <aside><p id="result-form"></p></aside>
+                </div>
+            </form>
+            <hr>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Eugin Fiones. All rights reserved.</p>
+    </footer>
     
+    <!-- Javascript External -->
+    <script src="js\script.js"></script>
+
 </body>
 </html>
